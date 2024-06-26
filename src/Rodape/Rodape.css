@@ -1,6 +1,6 @@
 /* src/componentes/Rodape/rodape.css */
 
-.footer {
+/* .footer {
   background: #6278f7;
   color: #fff;
   padding: 80px;
@@ -16,4 +16,38 @@
 
 .footer ul li:last-child {
   margin-right: 0;
+} */
+
+.footer {
+  background: #6278f7;
+  color: #fff;
+  padding: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Adicionado para lidar com quebra de linha em telas menores */
+}
+
+.footer ul li {
+  display: inline-block;
+  margin-right: 32px;
+  margin-bottom: 16px; /* Adicionado para espaçamento vertical em telas menores */
+}
+
+.footer ul li:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos específicos para dispositivos com largura de até 768px */
+  .footer {
+    flex-direction: column; /* Altera o layout para empilhar verticalmente */
+    text-align: center; /* Centraliza o conteúdo verticalmente */
+    padding: 40px; /* Ajusta o espaçamento interno */
+  }
+
+  .footer ul li {
+    display: block; /* Altera para layout de bloco */
+    margin-right: 0;
+  }
 }

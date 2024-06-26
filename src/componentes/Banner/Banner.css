@@ -1,3 +1,12 @@
+/* .banner {
+  background-color: #6278f7;
+  text-align: center;
+}
+
+.banner img {
+  max-width: 100%;
+} */
+
 .banner {
   background-color: #6278f7;
   text-align: center;
@@ -5,4 +14,12 @@
 
 .banner img {
   max-width: 100%;
+  height: auto; /* Adicionado para manter a proporção da imagem */
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos específicos para dispositivos com largura de até 768px */
+  .banner {
+    padding: 20px; /* Adicione margens ou preenchimento adequado aqui */
+  }
 }

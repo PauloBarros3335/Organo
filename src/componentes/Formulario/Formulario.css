@@ -1,3 +1,18 @@
+/* .formulario {
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+}
+
+.formulario form {
+  max-width: 80%;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 36px 64px;
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+}
+ */
+
 .formulario {
   display: flex;
   justify-content: center;
@@ -10,4 +25,19 @@
   border-radius: 20px;
   padding: 36px 64px;
   box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+@media screen and (max-width: 768px) {
+  /* Estilos específicos para dispositivos com largura de até 768px */
+  .formulario {
+    flex-direction: column; /* Altera o layout para empilhar verticalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    margin: 40px 0; /* Ajusta a margem superior e inferior */
+  }
+
+  .formulario form {
+    width: 100%; /* Preenche a largura total do contêiner */
+    max-width: none; /* Remove a largura máxima */
+    padding: 24px; /* Ajusta o espaçamento interno */
+  }
 }
