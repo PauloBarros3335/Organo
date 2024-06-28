@@ -45,12 +45,14 @@ function App() {
   const [colaboradores, setColaboradores] = useState([]);
 
   const aoNovoColaboradorAdicionado = (colaborador) => {
+    debugger;
     setColaboradores([...colaboradores, colaborador]);
   };
   return (
     <div className="App">
       <Banner />
       <Formulario
+        times={times.map((time) => time.nome)}
         aoColaboradorCadastrado={(colaborador) =>
           aoNovoColaboradorAdicionado(colaborador)
         }

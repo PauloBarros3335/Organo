@@ -22,4 +22,9 @@
   .banner {
     padding: 20px; /* Adicione margens ou preenchimento adequado aqui */
   }
+
+  .banner img {
+    max-width: 100%;
+    height: auto; /* Adicionado para manter a proporção da imagem */
+  }
 }
